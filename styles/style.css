@@ -42,6 +42,12 @@
     margin-bottom: 50px;
 }
 
+.nav-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .name {
     font-size: 24px;
 }
@@ -211,7 +217,6 @@ i {
     margin: 40px 15%;
     display: flex;
     align-items: center;
-    /* row-gap: 20px; */
 }
 
 .featured-img {
@@ -252,11 +257,13 @@ i {
 .footer {
     background-color: #0A0826;
     width: 100%;
-    padding: 50px 0 ;
+    padding: 50px 0;
 }
-.footer-content{
+
+.footer-content {
     padding-top: 10px;
 }
+
 .footer-content .name {
     color: #FFF;
     text-align: center;
@@ -267,11 +274,136 @@ i {
     font-family: Poppins;
     font-size: 24px;
 }
-.footer-content .social{
+
+.footer-content .social {
     margin-top: 10px;
     text-align: center;
 }
-.social i{
-    font-size: 32px;
+
+.footer-content p {
+    font-size: 14px;
+}
+
+.social i {
+    font-size: 25px;
     margin: 0 10px;
+}
+
+
+
+
+/* Responsive design  */
+
+
+/* Mobile design */
+
+@media only screen and (max-width:480px) {
+   #hide{
+    display: none;
+   }
+   
+    .header {
+        margin-top: 20px;
+    }
+
+    .nav {
+        margin-bottom: 10px;
+    }
+
+    .nav-name {
+        gap: 20px;
+    }
+    .nav-name .name{
+        font-size: 1rem;
+    }
+
+    .nav .manu-bar {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .banner-content,
+    .banner .title,
+    .banner .description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .title {
+        font-size: 1.75rem;
+    }
+
+    .banner .description {
+        font-size: 14px;
+    }
+
+    .banner-image img {
+        width: 360px;
+        height: 270px;
+    }
+
+    .partner{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
+    .product{
+        margin-bottom: 0px;
+    }
+
+    .featured{
+        flex-direction: column-reverse;
+        width: 95%;
+        align-items: flex-start;
+        margin-left: 5px;
+    }
+    .featured-content{
+        max-width: 90%;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .featured-img img{
+        width: 320px;
+        height: 240px;
+    }
+
+}
+
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    /* .header .manu-bar {
+        display: none;
+    } */
+    #nav-bar {
+        display: none;
+    }
+
+
+    .featured, .banner, .popular-collection, .partner-section{
+        display: none;
+    }
+
+}
+
+
+
+@media only screen and (min-width:769px) and (max-width:1279px) {
+    #nav-bar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1280px) and (max-width:2500px) {
+    #nav-bar {
+        display: none;
+    }
 }
