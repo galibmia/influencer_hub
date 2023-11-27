@@ -365,17 +365,31 @@ i {
         width: 95%;
         align-items: flex-start;
         margin-left: 5px;
+        margin-right: 0;
     }
     .featured-content{
         max-width: 90%;
         padding: 0 10px;
         margin: 0;
     }
+    
     .featured-img img{
         width: 320px;
         height: 240px;
     }
 
+    .featured-content .title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .featured-content .description{
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+    .featured-content .button {
+
+        margin-left: 110px;
 }
 
 
