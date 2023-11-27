@@ -390,20 +390,32 @@ i {
     .featured-content .button {
 
         margin-left: 110px;
+        
+    }
+    .message{
+        display: none;
+    }
 }
 
 
+/* 
+------------------------------
+Tablet and larger smartphone 
+-------------------------------
+*/
+
+
 @media only screen and (min-width:481px) and (max-width:768px) {
-    /* .header .manu-bar {
-        display: none;
-    } */
-    #nav-bar {
+    
+    .header,.featured, .banner, .popular-collection, .partner-section, .footer{
         display: none;
     }
-
-
-    .featured, .banner, .popular-collection, .partner-section{
-        display: none;
+    .message{
+        width: 90%;
+        text-align: center;
+        margin: 0 5%;
+        margin-top: 200px;
+        font-size: 40px;
     }
 
 }
@@ -411,13 +423,63 @@ i {
 
 
 @media only screen and (min-width:769px) and (max-width:1279px) {
+/* Hidden area */
+#hide{
+    display: none;
+   }
+   
     #nav-bar {
         display: none;
     }
+    .message{
+        display: none;
+    }
+/* Hidden area */
+
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+    .product{
+        margin-bottom: 0px;
+    }
+
+
+    .featured{
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 10%;
+        width: 80%;
+    
+    } 
+    .featured-content{
+        max-width: 90%;
+        margin: 0;
+    }
+    
+    .featured-img img{
+        width: 320px;
+        height: 240px;
+    }
+
+    .featured-content .title{
+        font-size: 30px;
+        width: 100%;
+
+    }
+    .featured-content .description{
+        font-size: 14px;
+        width: 100%;
+    } 
+  
+
 }
 
 @media only screen and (min-width:1280px) and (max-width:2500px) {
     #nav-bar {
+        display: none;
+    }
+    .message{
         display: none;
     }
 }
